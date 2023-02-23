@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 # displays information about the bestschool file.
 
-FILE="bestschool"
-
-if [ -e "$FILE" ]
+if [ -e "bestschool" ]
 then
     echo "school file exists"
-    if [ -s "$FILE" ]
+	if [ -s "bestschool" ]
     then
         echo "school file is not empty"
     else
         echo "school file is empty"
     fi
-    if [ -f "$FILE" ]
+    if [ -f "bestschool" ]
     then
         echo "school is a regular file"
     fi
